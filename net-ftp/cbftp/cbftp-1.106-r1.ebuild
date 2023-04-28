@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+### Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # NOTE: The comments in this file are for instruction and documentation.
@@ -183,4 +183,5 @@ dobin bin/*;
 #emake install
 	# Again, verify the Makefiles!  We don't want anything falling
 	# outside of ${D}.
+
 }
