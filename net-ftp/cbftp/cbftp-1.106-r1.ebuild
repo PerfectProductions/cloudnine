@@ -81,7 +81,7 @@ KEYWORDS="arm64 ~arm64 ~amd64"
 # Comprehensive list of any and all USE flags leveraged in the ebuild,
 # with some exceptions, e.g., ARCH specific flags like "amd64" or "ppc".
 # Not needed if the ebuild doesn't use any USE flags.
-IUSE="ssl ncurses tinfo wget"
+IUSE="ssl ncurses"
 
 # A space delimited list of portage features to restrict. man 5 ebuild
 # for details.  Usually not needed.
@@ -98,10 +98,9 @@ IUSE="ssl ncurses tinfo wget"
 # a dependency.
 RDEPEND="
 ssl? ( >=dev-libs/openssl-1.0.2q:0= )
-ncurses? ( sys-libs/ncurses )
-tinfo? ( sys-apps/tinfo )
-wget? ( net-misc/wget )
-"
+ncurses? ( sys-libs/ncurses )"
+#wget? ( net-misc/wget )
+#"
 
 # Build-time dependencies that need to be binary compatible with the system
 # being built (CHOST). These include libraries that we link against.
